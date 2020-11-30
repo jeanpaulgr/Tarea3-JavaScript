@@ -26,7 +26,6 @@ var objeto = {
         }
         console.log('Item de lista',this.lista[posicion]);
         return this.lista[posicion];
-        
     },
     vaciarLista: function(){
         self = this;
