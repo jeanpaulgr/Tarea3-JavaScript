@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../tarea3/tarea3.js"></script>
+    <title>Tarea 2</title>
+</head>
+<body>
+    <h1>TAREA N°3</h1>
+    <h2>Jean González</h2>
+        <ul>
+        <li>Una propiedad de tipo function llamado <b>llamadaApi</b>, no recibirá parámetros
+            Esta función debe hacer una llamada api utilizando fetch utilizando la siguiente url: https://escalab-6b3e3.firebaseio.com/javascript.json
+            La respuesta que debe ser transformada utilizando .json(), debe guardar el resultado en lista
+            La función debe revisar si la lista ya tiene datos, si ya tiene datos entonces no debe hacer la llamada fetch</li>
+        <button type="button" onclick="probar1()">Probar llamadaApi</button>
+            
+        <li>Una propiedad de tipo function llamado <b>verDatoLista</b>, recibirá 1 parámetro que será un número llamado posicion
+            La función debe retornar el elemento en la lista con la posición entregada
+            En caso de que no existe la posición especificada, debe retornar un mensaje No existe ese elemento en la lista</li>
+            <input id="Param1VerDatoLista" type="text" placeholder="Ingresar parámetro..."></input>
+        </br><button type="button" onclick="probar2()">Probar verDatoLista</button>
+        
+        <li>Una propiedad de tipo function llamada <b>vaciarLista</b>, que no recibirá parámetros
+            La función deberá ejecutar una Promise, que debe eliminar los datos de la propiedad lista luego de 3 segundos, imprimiendo en consola Lista eliminada!
+            La función deberá un mensaje: Se eliminará la lista de forma asíncrona</li>
+        <button type="button" onclick="probar3()">Probar vaciarLista</button>
+        <li>Una propiedad de tipo function llamada <b>verPorPropiedad</b>, que recibirá 2 parámetros, el primero es un número denominado posición y la segunda es un string llamada propiedad
+            La función deberá buscar el elemento dentro de la propiedad lista
+            La función deberá buscar la propiedad especificada por el parámetro propiedad dentro del objeto devuelto por la ejecución anterior.
+            La función deberá devolver el valor de la propiedad ingresada anteriormente.</li>
+            <input id="Param1VerPorPropiedad" type="text" placeholder="Ingresar parámetro 1..."></input>
+            <input id="Param2VerPorPropiedad" type="text" placeholder="Ingresar parámetro 2..."></input>
+        </br>
+            <button type="button" onclick="probar4()">Probar verPorPropiedad</button>
+        </ul>
+        <h2>Resultados</h2>
+        <div id="resultados"></div>
+    
+</body>
+</html>
